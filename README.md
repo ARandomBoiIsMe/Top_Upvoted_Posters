@@ -37,14 +37,14 @@ A script that locates the most upvoted users in a subreddit within a specified t
     - Weekly:
       ```
 
-      schtasks /create /tn MostUpvotedPostersWeekly /tr "C:\path\to\the\main.py" /sc weekly /d SUN
+      schtasks /create /tn MostUpvotedPostersWeekly /tr "C:\path\to\the\main.py" /sc weekly /d SUN /it
 
       ```
 
     - Monthly:
       ```
 
-      schtasks /create /tn MostUpvotedPostersMonthly /tr "C:\path\to\the\main.py" /sc monthly /mo lastday /m *
+      schtasks /create /tn MostUpvotedPostersMonthly /tr "C:\path\to\the\main.py" /sc monthly /mo lastday /m * /it
 
       ```
 
