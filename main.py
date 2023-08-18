@@ -24,9 +24,9 @@ def main():
         logging.error(f"Subreddit does not exist: r/{subreddit_name}.")
         exit()
 
-    # if not subreddit.user_is_moderator:
-    #     logging.error(f"You must be a mod in this sub: r/{subreddit_name}.")
-    #     exit()
+    if not subreddit.user_is_moderator:
+        logging.error(f"You must be a mod in this sub: r/{subreddit_name}.")
+        exit()
 
     previous_posts = get_previous_posts(subreddit)
 
