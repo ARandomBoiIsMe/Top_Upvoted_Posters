@@ -8,15 +8,12 @@ A script that locates the most upvoted users in a subreddit within a specified t
 - Open your command prompt and change your directory to that of the unzipped files.  
 - Install the required packages  :
   ```
-
   pip install -U praw python-dateutil
-
   ```
 ## Configuration
 - Create a Reddit App (script) at https://www.reddit.com/prefs/apps/ and get your ```client_id``` and ```client_secret```.  
 - Edit the ```config.ini``` file with your details and save:
   ```
-
   [REDDIT]
   CLIENT_ID = your_client_id
   CLIENT_SECRET = your_client_secret
@@ -28,7 +25,6 @@ A script that locates the most upvoted users in a subreddit within a specified t
   NUMBER_OF_POSTERS = preferred_number_of_posters_to_track
   TIMEFRAME = preferred_time_period (W for Weeks, M for Months)
   TIMERANGE = preferred_time_range (1 OR 2 OR 3...)
-
   ```
 
   ## Running the script
@@ -36,16 +32,12 @@ A script that locates the most upvoted users in a subreddit within a specified t
   Open your command prompt (Windows) and enter:  
     - Weekly:
       ```
-
       schtasks /create /tn MostUpvotedPostersWeekly /tr "C:\path\to\the\main.py" /sc weekly /d SUN /it
-
       ```
 
     - Monthly:
       ```
-
       schtasks /create /tn MostUpvotedPostersMonthly /tr "C:\path\to\the\main.py" /sc monthly /mo lastday /m * /it
-
       ```
 
   
